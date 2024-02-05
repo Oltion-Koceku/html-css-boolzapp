@@ -87,6 +87,23 @@ i {
   height: 75px;
 }
 
+.name {
+  padding-left: 10px;
+}
+
+.name h2 {
+  font-size: 22px;
+}
+
+.name p {
+  color: var(--accaunt);
+}
+
+.imposta i {
+  padding: 5px;
+  color: var(--imposta);
+}
+
 /* display */
 .d-flex {
   display: flex;
@@ -111,12 +128,17 @@ i {
 
 }
 
+.accaunt {
+  justify-content: space-between;
+}
+
 /* /Contatti e chat */
 
 /* contatti */
-.contacts .accaunt{
-border-right: 1px solid lightgray;
+.contacts .accaunt {
+  border-right: 1px solid lightgray;
 }
+
 .contacts .notifiche {
   width: 100%;
   height: 80px;
@@ -134,16 +156,15 @@ border-right: 1px solid lightgray;
   height: 695px;
   overflow: scroll;
 }
-.contacts .contatti .user{
-width: 100%;
-height: calc(100% / 7);
-border-bottom: 1px solid lightgray;
+
+.contacts .contatti .user {
+  width: 100%;
+  height: calc(100% / 7);
+  border-bottom: 1px solid lightgray;
 }
+
 /* dettaggli */
-.imposta i {
-  padding: 5px;
-  color: var(--imposta);
-}
+
 
 .notifiche .icon {
   background-color: white;
@@ -156,44 +177,39 @@ border-bottom: 1px solid lightgray;
   font-size: 21px;
 }
 
-.notifiche .attiva{
-padding-left: 10px;
-}
-.notifiche .attiva h3{
-font-size: 15px;
-padding-bottom: 5px;
-}
-.notifiche .attiva a{
-font-size: 13px;
+.notifiche .attiva {
+  padding-left: 10px;
 }
 
-.cerca .search i{
+.notifiche .attiva h3 {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.notifiche .attiva a {
+  font-size: 13px;
+}
+
+.cerca .search i {
   color: var(--imposta);
   font-size: 18px;
   padding: 8px;
   background-color: white;
 }
 
-.cerca .nuova input{
-border: white;
-width: 340px;
-padding: 10px;
-color: var(--imposta);
-}
-.contatti .user .clock{
-padding-top: 11px;
-color: var(--accaunt);
+.cerca .nuova input {
+  border: white;
+  width: 340px;
+  padding: 10px;
+  color: var(--imposta);
 }
 
-.contatti .user .chat-text .name{
-padding-left: 10px;
-} 
-.contatti .user .chat-text .name h2{
-font-size: 22px;
-} 
-.contatti .user .chat-text .name p{
-color: var(--accaunt);
-} 
+.contatti .user .clock {
+  padding-top: 11px;
+  color: var(--accaunt);
+}
+
+
 /* /dettaggli */
 
 /* /contatti */
@@ -204,14 +220,23 @@ color: var(--accaunt);
   width: 100%;
   height: 750px;
   overflow: scroll;
+  background-image: url(../img/mine.jpg);
 }
 
-.chat .imput {
+.chat .input {
   width: 100%;
   height: 75px;
+  background-color: var(--imput);
 }
 
-/* chat */
+/* dettagli chat */
+.chat .accaunt .text-icon .name p {
+  color: gray;
+}
+
+/* /dettagli chat */
+
+/* /chat */
 
 /* responsive */
 /* Tablet */
@@ -222,28 +247,35 @@ color: var(--accaunt);
   }
 
   /* contatti */
-  .contacts .accaunt{
-  justify-content: center;
+  .contacts .accaunt {
+    justify-content: center;
   }
+
   .contacts .notifiche {
     display: none;
   }
-  
+
   .contacts .cerca {
     display: none;
   }
-  
+
   .contacts .contatti {
     height: 825px;
   }
-  
+
   .contacts .contatti .name,
   .clock {
     display: none;
   }
-  .contacts .accaunt .imposta{
-  display: none;
-  } 
+
+  .contacts .accaunt .imposta {
+    display: none;
+  }
+
+  .contacts .contatti .user {
+    justify-content: center;
+  }
+
   /* /contatti */
 }
 
