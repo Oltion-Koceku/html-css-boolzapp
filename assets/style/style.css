@@ -295,6 +295,10 @@ font-size: 10px;
   }
 
   /* /contatti */
+  .chat .text{
+    padding-right: 80px;
+    padding-left: 20px;
+  }
 }
 
 /* /Tablet */
@@ -312,13 +316,14 @@ font-size: 10px;
     width: 542px;
     height: 900px;
   }
+  .text .box-text{
+  width: 80%;
   
-
-  .chat .imput .emoji,
+  }
+  .chat .input .emoji,
   .audio {
     display: none;
   }
-
   /* /chat */
 }
 
