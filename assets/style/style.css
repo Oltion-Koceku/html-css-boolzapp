@@ -30,7 +30,6 @@ body {
   max-width: 1300px;
   height: 900px;
   margin: 20px auto;
-
 }
 
 .row {
@@ -228,12 +227,31 @@ i {
   height: 75px;
   background-color: var(--imput);
 }
-
+.chat .text{
+padding: 50px 90px;
+}
 /* dettagli chat */
 .chat .accaunt .text-icon .name p {
   color: gray;
 }
-
+.text .box-text {
+width: 61%;
+background-color: var(--my-message);
+border-radius: 10px;
+margin-bottom: 20px;
+margin-left: 39%;
+padding-bottom: 40px;
+}
+.text .box-text.d-flex.not-me{
+margin: 0;
+background-color: white;
+}
+.text .box-text .info i{
+font-size: 15px;
+}
+.text .box-text .info .clock{
+font-size: 10px;
+}
 /* /dettagli chat */
 
 /* /chat */
@@ -285,16 +303,16 @@ i {
   .row .contacts {
     display: none;
   }
-
+  
   /* chat */
+  .imposta {
+    display: none;
+  }
   .row .chat {
     width: 542px;
     height: 900px;
   }
-
-  .chat .imput .imposta {
-    display: none;
-  }
+  
 
   .chat .imput .emoji,
   .audio {
