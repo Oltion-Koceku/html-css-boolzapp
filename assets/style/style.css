@@ -1,0 +1,50 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.debug{
+  border: 1px solid black;
+  background-color: lightgreen;
+}
+/* layout */
+.container{
+width: 1300px;
+height: 900px;
+margin: 20px auto;
+}
+.row{
+display: flex;
+}
+.p-relative{
+position: relative;
+}
+.col{
+  width: 100%;
+  padding: 10px;
+}
+/* utility */
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.flex-nowrap{
+  flex-wrap: nowrap;
+}
+
+/* display */
+.d-flex{
+  display: flex;
+}
+
+.d-none{
+  display: none;
+}
+
+/* main */
