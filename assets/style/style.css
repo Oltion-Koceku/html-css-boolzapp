@@ -1,4 +1,15 @@
 /* Reset */
+
+:root {
+  --accaunt: #eaeaea;
+  --notifiche: #8edafc;
+  --cerca: #fafafa;
+  --my-message: #d5f9ba;
+  --imput: #f3eeea;
+  --background: #009688;
+  --imposta: #b1b1b1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,14 +41,24 @@ body {
   position: relative;
 }
 
-.col {
+.spazi {
   width: 100%;
   padding: 10px;
 }
 
+img {
+  object-fit: cover;
+  width: 88%;
+  border-radius: 50%;
+}
+
+i {
+  font-size: 25px;
+}
+
 /* utility */
-.justify-center {
-  justify-content: center;
+.align-center {
+  align-items: center;
 }
 
 .justify-between {
@@ -57,6 +78,16 @@ body {
   display: none;
 }
 
+.icon {
+  width: 60px;
+}
+
+.accaunt {
+  background-color: var(--accaunt);
+  width: 100%;
+  height: 75px;
+}
+
 /* main */
 /* Contatti e chat */
 .row .contacts {
@@ -74,30 +105,44 @@ body {
 /* /Contatti e chat */
 
 /* contatti */
-.contacts .accaunt{
-width: 100%;
-height: 75px;
+
+.contacts .notifiche {
+  width: 100%;
+  height: 80px;
+  background-color: var(--notifiche);
 }
-.contacts .notifiche{
-width: 100%;
-height: 80px;
+
+.contacts .cerca {
+  width: 100%;
+  height: 50px;
+  background-color: var(--cerca);
 }
-.contacts .cerca{
-width: 100%;
-height: 50px;
-overflow: scroll;
+
+.contacts .contatti {
+  width: 100%;
+  height: 695px;
+  overflow: scroll;
 }
-.contacts .contatti{
-width: 100%;
-height: 695px;
+
+/* dettaggli */
+.imposta i {
+  padding: 5px;
+  color: var(--imposta);
 }
+
+.notifiche .icon{
+  background-color: white;
+  border-radius: 50%;
+  justify-content: center;
+}
+.notifiche .icon i{
+  color: var(--notifiche);
+}
+/* /dettaggli */
+
 /* /contatti */
 
 /* chat */
-.chat .accaunt {
-  width: 100%;
-  height: 75px;
-}
 
 .chat .text {
   width: 100%;
@@ -109,6 +154,7 @@ height: 695px;
   width: 100%;
   height: 75px;
 }
+
 /* chat */
 
 /* responsive */
@@ -118,16 +164,25 @@ height: 695px;
     max-width: 100px;
     width: 100%;
   }
+
   /* contatti */
-  .contacts .notifiche{
-  display: none;
+  .contacts .notifiche {
+    display: none;
   }
-  .contacts .cerca{
-  display: none;
+
+  .contacts .cerca {
+    display: none;
   }
-  .contacts .contatti{
-  height: 825px;
+
+  .contacts .contatti {
+    height: 825px;
   }
+
+  .contacts .contatti .name,
+  .clock {
+    display: none;
+  }
+
   /* /contatti */
 }
 
@@ -137,10 +192,23 @@ height: 695px;
   .row .contacts {
     display: none;
   }
-  .row .chat{
-  width: 542px;
-  height: 900px;
+
+  /* chat */
+  .row .chat {
+    width: 542px;
+    height: 900px;
   }
+
+  .chat .imput .imposta {
+    display: none;
+  }
+
+  .chat .imput .emoji,
+  .audio {
+    display: none;
+  }
+
+  /* /chat */
 }
 
 /* /mobile */
