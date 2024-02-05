@@ -85,12 +85,31 @@ height: 80px;
 .contacts .cerca{
 width: 100%;
 height: 50px;
+overflow: scroll;
 }
 .contacts .contatti{
 width: 100%;
 height: 695px;
 }
 /* /contatti */
+
+/* chat */
+.chat .accaunt {
+  width: 100%;
+  height: 75px;
+}
+
+.chat .text {
+  width: 100%;
+  height: 750px;
+  overflow: scroll;
+}
+
+.chat .imput {
+  width: 100%;
+  height: 75px;
+}
+/* chat */
 
 /* responsive */
 /* Tablet */
@@ -117,6 +136,10 @@ height: 695px;
 @media screen and (max-width:542px) {
   .row .contacts {
     display: none;
+  }
+  .row .chat{
+  width: 542px;
+  height: 900px;
   }
 }
 
