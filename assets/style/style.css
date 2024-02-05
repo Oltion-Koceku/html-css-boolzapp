@@ -10,15 +10,16 @@
   background-color: lightgreen;
 }
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
 }
+
 /* layout */
 .container {
   max-width: 1300px;
   height: 900px;
   margin: 20px auto;
-  
+
 }
 
 .row {
@@ -58,14 +59,65 @@ body{
 
 /* main */
 /* Contatti e chat */
-.row .contacts{
-max-width: 390px;
-height: 900px;
-width: 100%;
+.row .contacts {
+  max-width: 390px;
+  height: 900px;
+  width: 100%;
 }
-.row .chat{
+
+.row .chat {
   width: 910px;
   height: 900px;
 
 }
+
 /* /Contatti e chat */
+
+/* contatti */
+.contacts .accaunt{
+width: 100%;
+height: 75px;
+}
+.contacts .notifiche{
+width: 100%;
+height: 80px;
+}
+.contacts .cerca{
+width: 100%;
+height: 50px;
+}
+.contacts .contatti{
+width: 100%;
+height: 695px;
+}
+/* /contatti */
+
+/* responsive */
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .row .contacts {
+    max-width: 100px;
+    width: 100%;
+  }
+  /* contatti */
+  .contacts .notifiche{
+  display: none;
+  }
+  .contacts .cerca{
+  display: none;
+  }
+  .contacts .contatti{
+  height: 825px;
+  }
+  /* /contatti */
+}
+
+/* /Tablet */
+/* mobile */
+@media screen and (max-width:542px) {
+  .row .contacts {
+    display: none;
+  }
+}
+
+/* /mobile */
