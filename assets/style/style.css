@@ -25,13 +25,11 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   overflow-y: hidden;
-  background: linear-gradient(
-    to bottom,
-    var(--background) 0%,
-    var(--background) 15%,
-    #dadbd4 15%,
-    #dadbd4 100%
-  )
+  background: linear-gradient(to bottom,
+      var(--background) 0%,
+      var(--background) 15%,
+      #dadbd4 15%,
+      #dadbd4 100%)
 }
 
 /* layout */
@@ -51,8 +49,8 @@ body {
   position: relative;
 }
 
-.p-absolute{
-position: absolute;
+.p-absolute {
+  position: absolute;
 }
 
 .spazi {
@@ -247,73 +245,83 @@ i {
   height: 75px;
   background-color: var(--imput);
 }
-.chat .text{
-padding: 50px 90px;
+
+.chat .text {
+  padding: 50px 90px;
 }
 
-.chevron{
-width: 200px;
-height: 80PX;
-background-color: white;
-box-shadow: 5px 5px 5px #888888;
-top: 20px;
-right: 40px;
-display: none;
-text-align: center;
+.chevron {
+  width: 200px;
+  height: 80PX;
+  background-color: white;
+  box-shadow: 5px 5px 5px #888888;
+  top: 20px;
+  right: 40px;
+  display: none;
+  text-align: center;
 }
 
 
-.chevron.due{
+.chevron.due {
   top: 20px;
   right: 40px;
 
 }
+
 /* dettagli chat */
 .chat .accaunt .text-icon .name p {
   color: gray;
 }
+
 .text .box-text {
-width: 61%;
-background-color: var(--my-message);
-border-radius: 10px;
-margin-bottom: 20px;
-margin-left: 39%;
-}
-.text .box-text.d-flex.not-me{
-margin: 0;
-background-color: white;
+  width: 61%;
+  background-color: var(--my-message);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 39%;
 }
 
-.text .box-text p{
-padding-bottom: 40px;
-}
-.text .box-text .info i{
-font-size: 15px;
-}
-.text .box-text .info .menu:hover .chevron{
-display: block;
-}
-.text .box-text .info .clock-chat{
-font-size: 10px;
-}
-.input i{
-padding: 15px 20px;
-font-size: 25px;
-color: gray;
-}
-.input .search, input{
-width: 100%;
-border: white;
+.text .box-text.d-flex.not-me {
+  margin: 0;
+  background-color: white;
 }
 
-.input .search input{
+.text .box-text p {
+  padding-bottom: 40px;
+}
+
+.text .box-text .info i {
+  font-size: 15px;
+}
+
+.text .box-text .info .menu:hover .chevron {
+  display: block;
+}
+
+.text .box-text .info .clock-chat {
+  font-size: 10px;
+}
+
+.input i {
+  padding: 15px 20px;
+  font-size: 25px;
+  color: gray;
+}
+
+.input .search,
+input {
+  width: 100%;
+  border: white;
+}
+
+.input .search input {
   height: 55px;
   border-radius: 5px;
-padding: 10px;
+  padding: 10px;
 }
 
-.text .chevron h4{
-padding-bottom: 20px;
+.text .chevron h4 {
+  padding-bottom: 20px;
 }
 
 /* /dettagli chat */
@@ -323,47 +331,48 @@ padding-bottom: 20px;
 /* responsive */
 /* Tablet */
 @media screen and (max-width: 992px) {
-  .container{
+  .container {
     margin: 0;
     width: auto;
   }
+
   .row .contacts {
     max-width: 100px;
     width: 100%;
   }
-  
+
   /* contatti */
   .contacts .accaunt {
     justify-content: center;
   }
-  
+
   .contacts .notifiche {
     display: none;
   }
-  
+
   .contacts .cerca {
     display: none;
   }
-  
+
   .contacts .contatti {
     height: 825px;
   }
-  
+
   .contacts .contatti .name,
   .clock {
     display: none;
   }
-  
+
   .contacts .accaunt .imposta {
     display: none;
   }
-  
+
   .contacts .contatti .user {
     justify-content: center;
   }
-  
+
   /* /contatti */
-  .chat .text{
+  .chat .text {
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -372,31 +381,98 @@ padding-bottom: 20px;
 /* /Tablet */
 /* mobile */
 @media screen and (max-width:542px) {
-  .container{
+  .container {
     margin: 0;
     width: auto;
   }
+
   .row .contacts {
     display: none;
   }
-  
+
   /* chat */
   .imposta {
     display: none;
   }
+
   .row .chat {
     width: 542px;
     height: 900px;
   }
-  .text .box-text{
-  width: 80%;
-  margin-left: 21%;
+
+  .text .box-text {
+    width: 80%;
+    margin-left: 21%;
   }
+
   .chat .input .emoji,
   .audio {
     display: none;
   }
+
   /* /chat */
 }
 
-/* /mobile */
+/* dark mode */
+:root {
+  --d-accaunt: #202C33;
+  --d-notifiche: #8edafc;
+  --d-cerca: #fafafa;
+  --d-my-message: #005C4B;
+  --d-imput: #8696A0;
+  --d-background: #0C1317;
+  --d-imposta: #AEBAC1;
+  --d-contatti: #111B21;
+  --d-border: #c5d9e4;
+  --d-search: #2A3942;
+
+  --
+}
+
+body.dark-mode {
+  background: var(--d-background);
+
+}
+
+.dark-mode .accaunt {
+  background-color: var(--d-accaunt);
+}
+
+.dark-mode .accaunt .imposta i {
+  color: var(--d-imposta);
+}
+
+.dark-mode .contacts .cerca,
+.dark-mode .contacts .user.spazi {
+  background-color: var(--d-contatti);
+}
+
+.dark-mode .contacts .cerca .nuova input,
+.dark-mode .contacts .cerca .search i {
+  background-color: var(--d-accaunt);
+  border: var(--d-accaunt);
+}
+
+.dark-mode .chat .text {
+  background-image: url(../img/mine2.jpg);
+}
+
+.dark-mode .chat .text .box-text {
+  color: white;
+  background-color: var(--d-my-message);
+}
+
+.dark-mode .chat .text .box-text.not-me {
+  background-color: var(--d-accaunt);
+}
+
+.dark-mode .chat .input {
+  background-color: var(--d-accaunt);
+}
+
+.dark-mode .chat .input .search input {
+  background-color: var(--d-search);
+  color: var(--d-imposta);
+}
+
+/* /dark mode */
