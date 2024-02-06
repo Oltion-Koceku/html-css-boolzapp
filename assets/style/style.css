@@ -37,8 +37,10 @@ body {
 /* layout */
 .container {
   max-width: 1300px;
-  height: 900px;
+  max-height: 900px;
   margin: 20px auto;
+  width: 90%;
+  height: 99%;
 }
 
 .row {
@@ -47,6 +49,10 @@ body {
 
 .p-relative {
   position: relative;
+}
+
+.p-absolute{
+position: absolute;
 }
 
 .spazi {
@@ -126,7 +132,7 @@ i {
 /* Contatti e chat */
 .row .contacts {
   max-width: 390px;
-  height: 900px;
+  max-height: 900px;
   width: 100%;
 }
 
@@ -244,6 +250,23 @@ i {
 .chat .text{
 padding: 50px 90px;
 }
+
+.chevron{
+width: 200px;
+height: 80PX;
+background-color: white;
+box-shadow: 5px 5px 5px #888888;
+top: 20px;
+right: 40px;
+display: none;
+}
+
+
+.chevron.due{
+  top: 20px;
+  right: 40px;
+
+}
 /* dettagli chat */
 .chat .accaunt .text-icon .name p {
   color: gray;
@@ -254,14 +277,21 @@ background-color: var(--my-message);
 border-radius: 10px;
 margin-bottom: 20px;
 margin-left: 39%;
-height: 160px;
 }
 .text .box-text.d-flex.not-me{
 margin: 0;
 background-color: white;
 }
+
+.text .box-text p{
+padding-bottom: 40px;
+}
 .text .box-text .info i{
 font-size: 15px;
+}
+.text .box-text .info i:hover .chevron{
+display: block;
+color: #009688;
 }
 .text .box-text .info .clock{
 font-size: 10px;
@@ -281,6 +311,11 @@ border: white;
   border-radius: 5px;
 padding: 10px;
 }
+
+.text .chevron h4{
+padding-bottom: 20px;
+}
+
 /* /dettagli chat */
 
 /* /chat */
@@ -290,45 +325,46 @@ padding: 10px;
 @media screen and (max-width: 992px) {
   .container{
     margin: 0;
-    }
+    width: auto;
+  }
   .row .contacts {
     max-width: 100px;
     width: 100%;
   }
-
+  
   /* contatti */
   .contacts .accaunt {
     justify-content: center;
   }
-
+  
   .contacts .notifiche {
     display: none;
   }
-
+  
   .contacts .cerca {
     display: none;
   }
-
+  
   .contacts .contatti {
     height: 825px;
   }
-
+  
   .contacts .contatti .name,
   .clock {
     display: none;
   }
-
+  
   .contacts .accaunt .imposta {
     display: none;
   }
-
+  
   .contacts .contatti .user {
     justify-content: center;
   }
-
+  
   /* /contatti */
   .chat .text{
-    padding-right: 80px;
+    padding-right: 20px;
     padding-left: 20px;
   }
 }
@@ -337,7 +373,8 @@ padding: 10px;
 /* mobile */
 @media screen and (max-width:542px) {
   .container{
-  margin: 0;
+    margin: 0;
+    width: auto;
   }
   .row .contacts {
     display: none;
@@ -353,7 +390,7 @@ padding: 10px;
   }
   .text .box-text{
   width: 80%;
-  
+  margin-left: 21%;
   }
   .chat .input .emoji,
   .audio {
