@@ -23,6 +23,15 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow-y: hidden;
+  background: linear-gradient(
+    to bottom,
+    var(--background) 0%,
+    var(--background) 15%,
+    #dadbd4 15%,
+    #dadbd4 100%
+  )
 }
 
 /* layout */
@@ -95,7 +104,7 @@ i {
 }
 
 .name p {
-  color: var(--accaunt);
+  color: var(--imposta);
 }
 
 .imposta i {
@@ -153,7 +162,8 @@ i {
 .contacts .contatti {
   width: 100%;
   height: 695px;
-  overflow: scroll;
+  overflow-y: scroll;
+  background-color: white;
 }
 
 .contacts .contatti .user {
@@ -192,15 +202,19 @@ i {
 .cerca .search i {
   color: var(--imposta);
   font-size: 18px;
-  padding: 8px;
+  padding: 9px;
   background-color: white;
+  border: 1px solid;
+  border-right: white;
 }
 
 .cerca .nuova input {
   border: white;
-  width: 340px;
+  width: 330px;
   padding: 10px;
   color: var(--imposta);
+  border: 1px solid;
+  border-left: white;
 }
 
 .contatti .user .clock {
@@ -218,7 +232,7 @@ i {
 .chat .text {
   width: 100%;
   height: 750px;
-  overflow: scroll;
+  overflow-y: scroll;
   background-image: url(../img/mine.jpg);
 }
 
@@ -240,7 +254,7 @@ background-color: var(--my-message);
 border-radius: 10px;
 margin-bottom: 20px;
 margin-left: 39%;
-padding-bottom: 40px;
+height: 160px;
 }
 .text .box-text.d-flex.not-me{
 margin: 0;
@@ -252,6 +266,21 @@ font-size: 15px;
 .text .box-text .info .clock{
 font-size: 10px;
 }
+.input i{
+padding: 15px 20px;
+font-size: 25px;
+color: gray;
+}
+.input .search, input{
+width: 100%;
+border: white;
+}
+
+.input .search input{
+  height: 55px;
+  border-radius: 5px;
+padding: 10px;
+}
 /* /dettagli chat */
 
 /* /chat */
@@ -259,6 +288,9 @@ font-size: 10px;
 /* responsive */
 /* Tablet */
 @media screen and (max-width: 992px) {
+  .container{
+    margin: 0;
+    }
   .row .contacts {
     max-width: 100px;
     width: 100%;
@@ -304,6 +336,9 @@ font-size: 10px;
 /* /Tablet */
 /* mobile */
 @media screen and (max-width:542px) {
+  .container{
+  margin: 0;
+  }
   .row .contacts {
     display: none;
   }
