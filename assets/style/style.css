@@ -259,6 +259,7 @@ box-shadow: 5px 5px 5px #888888;
 top: 20px;
 right: 40px;
 display: none;
+text-align: center;
 }
 
 
@@ -289,11 +290,10 @@ padding-bottom: 40px;
 .text .box-text .info i{
 font-size: 15px;
 }
-.text .box-text .info i:hover .chevron{
+.text .box-text .info .menu:hover .chevron{
 display: block;
-color: #009688;
 }
-.text .box-text .info .clock{
+.text .box-text .info .clock-chat{
 font-size: 10px;
 }
 .input i{
